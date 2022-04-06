@@ -1,0 +1,15 @@
+<!-- <div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let mission of missions">
+      <app-card [mission]="mission"></app-card>
+    </div>
+  </div>
+</div> -->
+
+<div class="content">
+  <div class="grid-container">
+    <div class="grid-item" *ngFor="let mission of missions">
+      <app-card [mission]="mission"></app-card>
+    </div>
+  </div>
+</div>
