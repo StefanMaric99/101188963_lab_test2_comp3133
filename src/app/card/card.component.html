@@ -1,0 +1,22 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-header>
+    <mat-card-title>
+      <p>
+        {{mission.mission_name}}
+      </p>
+      <p>
+        {{mission.launch_year}}
+      </p>
+    </mat-card-title>
+
+  </mat-card-header>
+  <img mat-card-image src="{{mission.links.mission_patch_small}}" alt="mission img" width="200" height="200">
+  <mat-card-content>
+    <p>
+      {{mission.details}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="btns">
+    <button mat-flat-button (click)="navigate(mission)">See More</button>
+  </mat-card-actions>
+</mat-card>
