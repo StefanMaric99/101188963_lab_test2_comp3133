@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="box">
+    <div>
+      <img src="{{ mission.links.mission_patch_small }}" alt="" />
+    </div>
+    <div>
+      <ul>
+        <li>
+          Rocket ID / {{ mission.rocket.rocket_id }}
+        </li>
+        <li>
+          Rocket Name / {{ mission.rocket.rocket_name }}
+        </li>
+        <li>
+          Rocket Type / {{ mission.rocket.rocket_type }}
+        </li>
+        <li>
+          Flight Number / {{ mission.flight_number }}
+        </li>
+        <li>
+          Crew / {{ mission.crew || "NA" }}
+        </li>
+        <li>
+          Details / {{ mission.details }}
+        </li>
+        <li>
+          Is tentative / {{ mission.is_tentative }}
+        </li>
+        <li>
+          Launch date local / {{ mission.launch_date_local }}
+        </li>
+        <li>
+          Mission Name / {{ mission.mission_name }}
+        </li>
+        <li>
+          Launch_year / {{ mission.launch_year }}
+        </li>
+        <li>
+          Tentative max precision / {{ mission.tentative_max_precision }}
+        </li>
+        <li>
+          Launch date utc / {{ mission.launch_date_utc }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
